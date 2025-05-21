@@ -2,7 +2,7 @@ import axios from "axios";
 import toast from "react-hot-toast";
 
 const instance = axios.create({
-  baseURL: "http://localhost:5000/api", // your backend base url
+  baseURL: import.meta.env.VITE_API_BASE_URL, // your backend base url
 });
 
 // Add auth token interceptor
